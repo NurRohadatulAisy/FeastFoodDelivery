@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace FeastFoodDelivery.Shared.Domain
 {
-	internal class Rider
+	public class Rider: BaseDomainModel
 	{
-	}
+        public string? LicensePlateNumber { get; set; }
+
+        public int? StaffId { get; set; }
+        public virtual Staff? staff { get; set; }
+    }
 }

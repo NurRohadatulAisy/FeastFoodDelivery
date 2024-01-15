@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace FeastFoodDelivery.Shared.Domain
 {
-	internal class Staff
-	{
-	}
+	public class Staff : BaseDomainModel
+    {
+        public string? Name { get; set; }
+        public string? NRIC { get; set; }
+        public string? ContactNumber { get; set; }
+        public string? Address { get; set; }
+
+    }
 }

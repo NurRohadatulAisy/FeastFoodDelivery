@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FeastFoodDelivery.Shared.Domain
+namespace FeastFoodDelivery.Shared.Domain 
 {
-	internal class FoodItem
-	{
-	}
+	public class FoodItem : BaseDomainModel
+    {
+        public  string? Name { get; set; }
+
+    }
 }
